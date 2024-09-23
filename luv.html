@@ -71,13 +71,13 @@
             wordElements.push(loveEmoji);
             var i = 0;
             function loop () {
-                feedout(wordElements[i], 10); // Decreased fade out speed
+                feedout(wordElements[i], 10); 
                 i++;
                 if (i == wordElements.length) { i = 0; }
                 setTimeout(function () {
-                    feedin(wordElements[i], 10); // Decreased fade in speed
-                }, 200); // Decreased delay before fade in
-                setTimeout(loop, 1500); // Decreased delay before next loop
+                    feedin(wordElements[i], 10); 
+                }, 200); 
+                setTimeout(loop, 1500); 
             }
             loop();
         } 
